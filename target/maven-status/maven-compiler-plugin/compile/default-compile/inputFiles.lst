@@ -1,0 +1,8 @@
+/home/aleks/code/java/mybank/src/main/java/com/alexbalev/mybank/web/TransationsController.java
+/home/aleks/code/java/mybank/src/main/java/com/alexbalev/mybank/ApplicationLauncher.java
+/home/aleks/code/java/mybank/src/main/java/com/alexbalev/mybank/services/TransactionService.java
+/home/aleks/code/java/mybank/src/main/java/com/alexbalev/mybank/dto/TransactionDto.java
+/home/aleks/code/java/mybank/src/main/java/com/alexbalev/mybank/model/ErrorMessage.java
+/home/aleks/code/java/mybank/src/main/java/com/alexbalev/mybank/web/GlobalExceptionHandler.java
+/home/aleks/code/java/mybank/src/main/java/com/alexbalev/mybank/context/ApplicationConfiguration.java
+/home/aleks/code/java/mybank/src/main/java/com/alexbalev/mybank/model/Transaction.java
