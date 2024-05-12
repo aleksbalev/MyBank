@@ -3,6 +3,7 @@ package com.alexbalev.mybank.dto;
 import java.math.BigDecimal;
 
 import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotBlank;
 
 public class TransactionDto {
 
@@ -10,6 +11,9 @@ public class TransactionDto {
   BigDecimal amount;
 
   String reference;
+
+  @NotBlank
+  String userId;
 
   public BigDecimal getAmount() {
     return amount;
@@ -25,5 +29,13 @@ public class TransactionDto {
 
   public void setReference(String reference) {
     this.reference = reference;
+  }
+
+  public String getUserId() {
+    return userId;
+  }
+
+  public void setUserId(String userId) {
+    this.userId = userId;
   }
 }

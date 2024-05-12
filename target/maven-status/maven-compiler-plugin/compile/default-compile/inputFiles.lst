@@ -1,4 +1,7 @@
+/home/aleks/code/java/mybank/src/main/java/com/alexbalev/mybank/services/DummyTransactionServiceLoader.java
+/home/aleks/code/java/mybank/src/main/java/com/alexbalev/mybank/web/WebsiteController.java
 /home/aleks/code/java/mybank/src/main/java/com/alexbalev/mybank/web/TransationsController.java
+/home/aleks/code/java/mybank/src/main/java/com/alexbalev/mybank/web/forms/AccountForm.java
 /home/aleks/code/java/mybank/src/main/java/com/alexbalev/mybank/ApplicationLauncher.java
 /home/aleks/code/java/mybank/src/main/java/com/alexbalev/mybank/services/TransactionService.java
 /home/aleks/code/java/mybank/src/main/java/com/alexbalev/mybank/dto/TransactionDto.java

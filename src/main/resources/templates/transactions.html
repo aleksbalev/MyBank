@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Transactions Table</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        padding: 10px;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Transactions List</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Amount</th>
+          <th>Reference</th>
+          <th>Bank Slogan</th>
+          <th>Timestamp</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr th:each="transaction : ${transactions}">
+          <td th:text="${transaction.id}">ID</td>
+          <td th:text="${transaction.amount}">Amount</td>
+          <td th:text="${transaction.reference}">Reference</td>
+          <td th:text="${transaction.bankSlogan}">Bank Slogan</td>
+          <td
+            th:text="${#temporals.format(transaction.timestamp, 'dd-MM-yyyy HH:mm')}"
+          >
+            Timestamp
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

@@ -5,7 +5,6 @@ import java.time.ZonedDateTime;
 import java.util.UUID;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Transaction {
 
@@ -15,8 +14,9 @@ public class Transaction {
 
   private String reference;
 
-  @JsonProperty("bank_slogan")
   private String bankSlogan;
+
+  private String userId;
 
   @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm'Z'")
   private ZonedDateTime timestamp;
@@ -24,12 +24,13 @@ public class Transaction {
   public Transaction() {
   }
 
-  public Transaction(BigDecimal amount, String reference, ZonedDateTime timestamp, String bankSlogan) {
+  public Transaction(BigDecimal amount, String reference, ZonedDateTime timestamp, String bankSlogan, String userId) {
     this.id = UUID.randomUUID().toString();
     this.amount = amount;
     this.reference = reference;
     this.timestamp = timestamp;
     this.bankSlogan = bankSlogan;
+    this.userId = userId;
   }
 
   public String getId() {
@@ -70,5 +71,13 @@ public class Transaction {
 
   public void setBankSlogan(String bankSlogan) {
     this.bankSlogan = bankSlogan;
+  }
+
+  public String getUserId() {
+    return userId;
+  }
+
+  public void setUserId(String userId) {
+    this.userId = userId;
   }
 }
