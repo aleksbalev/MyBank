@@ -17,12 +17,12 @@ public class DummyTransactionServiceLoader {
     this.transactionService = transactionService;
   }
 
-  @PostConstruct
-  public void setup() {
-    System.out.println("Creating dev invoices...");
-    transactionService.create(BigDecimal.valueOf(2.5), "Big Mac Menu", "Logan");
-    transactionService.create(BigDecimal.valueOf(5), "Subway", "Logan");
-    transactionService.create(BigDecimal.valueOf(10), "Big Tasty Menu", "Peter");
-    transactionService.create(BigDecimal.valueOf(33), "Burger King Family Menu", "Peter");
-  }
+  // public void setup() {
+  // System.out.println("Creating dev invoices...");
+  // transactionService.create(BigDecimal.valueOf(2.5), "Big Mac Menu", "Logan");
+  // transactionService.create(BigDecimal.valueOf(5), "Subway", "Logan");
+  // transactionService.create(BigDecimal.valueOf(10), "Big Tasty Menu", "Peter");
+  // transactionService.create(BigDecimal.valueOf(33), "Burger King Family Menu",
+  // "Peter");
+  // }
 }

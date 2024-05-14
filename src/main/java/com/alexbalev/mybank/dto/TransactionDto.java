@@ -10,10 +10,12 @@ public class TransactionDto {
   @Min(1)
   BigDecimal amount;
 
-  String reference;
-
   @NotBlank
   String userId;
+
+  String reference;
+
+  String bankSlogan;
 
   public BigDecimal getAmount() {
     return amount;
@@ -37,5 +39,13 @@ public class TransactionDto {
 
   public void setUserId(String userId) {
     this.userId = userId;
+  }
+
+  public String getBankSlogan() {
+    return bankSlogan;
+  }
+
+  public void setBankSlogan(String bankSlogan) {
+    this.bankSlogan = bankSlogan;
   }
 }

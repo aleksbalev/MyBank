@@ -30,6 +30,6 @@ public class TransationsController {
   @PostMapping("/transactions")
   public Transaction createTransaction(@RequestBody @Valid TransactionDto transactionDto) {
     return transactionService.create(transactionDto.getAmount(), transactionDto.getReference(),
-        transactionDto.getUserId());
+        transactionDto.getUserId(), transactionDto.getBankSlogan());
   }
 }
